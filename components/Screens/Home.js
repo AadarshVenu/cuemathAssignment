@@ -7,6 +7,7 @@ import {
     Image,
     Dimensions,
     BackHandler,
+    Platform
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import MyLottieAnimation from "../Utilities/MyLottieAnimation";
@@ -22,7 +23,7 @@ import { lottieFiles, lottieTexts } from '../Utilities/Constants.js'
 
 const { width, height } = Dimensions.get("window");
 
-
+const OS = Platform.OS;
 
 const Home = ({ navigation }) => {
     const [mainState, setMainState] = useState({
@@ -169,6 +170,7 @@ const Home = ({ navigation }) => {
             .container p {
                 font-size :3rem;
                 line-height:2cm;
+                font-family: 'athletic';
             }
             button {
                 margin-top: 20px;
@@ -293,10 +295,12 @@ const styles = StyleSheet.create({
         color: "white",
         fontSize: 15,
         marginLeft: 10,
+        fontFamily: 'athletic',
     },
     logoutText: {
         color: "white",
         fontSize: 15,
+        fontFamily: 'athletic',
     },
     carouselContainer: {
         flex: 1,
@@ -310,7 +314,7 @@ const styles = StyleSheet.create({
     },
     paginationContainer: {
         position: "absolute",
-        bottom: 400,
+        bottom: OS === "ios" ? 300 : 400,
         width: "100%",
         flexDirection: "row",
         justifyContent: "center",
@@ -327,6 +331,7 @@ const styles = StyleSheet.create({
         fontSize: 28,
         color: "white",
         textAlign: "center",
+        fontFamily: 'athletic',
     },
     handleIndicator: {
         backgroundColor: "grey",
@@ -342,12 +347,14 @@ const styles = StyleSheet.create({
     },
     lottieText: {
         color: "white",
-        fontSize: 25,
+        fontSize:25,
         textAlign: "center",
+        fontFamily: "athletic",
+        lineHeight: 30,
     },
     lottieTextContainer: {
         position: "absolute",
-        bottom: 300,
+        bottom: OS === "ios" ? 200 : 300,
         width: "100%",
         flexDirection: "row",
         justifyContent: "center",

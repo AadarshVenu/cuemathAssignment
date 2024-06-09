@@ -21,11 +21,13 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 50,
         fontWeight: 'bold',
+        fontFamily: 'athletic',
     },
     textColorGo: {
         color: '#FFBA07',
         fontSize: 50,
         marginLeft: 5,
         fontWeight: 'bold',
+        fontFamily: 'athletic',
     },
 });

@@ -25,12 +25,12 @@ const HomePage = (props) => {
 
             <View style={styles.buttonContainer}>
                 <PrimaryButton
-                    title="Sign Up"
+                    title="Signup"
                     onPress={onPressSignUp}
                     margin={10}
                 />
                 <SecondaryButton
-                    title="Log In"
+                    title="Login"
                     onPress={onPressLogIn}
                     margin={10}
                 />

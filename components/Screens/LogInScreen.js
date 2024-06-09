@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     form: {
         marginBottom: 40,
         marginTop: 60,
+        fontFamily: 'athletic',
     },
     input: {
         height: 60,
@@ -113,7 +114,8 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         paddingHorizontal: 10,
         color: "#808080",
-        borderRadius: 10
+        borderRadius: 10,
+        fontFamily: 'athletic',
     },
     buttonContainer: {
         flex: 1,

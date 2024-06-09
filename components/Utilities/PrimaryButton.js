@@ -11,6 +11,7 @@ export default function PrimaryButton(props) {
                     paddingVertical: 15,
                     borderRadius: 10,
                     margin: margin ? margin : 0,
+                    fontFamily: 'athletic',
                 }}
                 onPress={onPress}
             >

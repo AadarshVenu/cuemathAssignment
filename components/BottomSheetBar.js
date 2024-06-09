@@ -8,7 +8,7 @@ export default function BottomSheetBar(props) {
     return (
         <BottomSheet
             ref={sheetRef}
-            snapPoints={["8%", "100%"]}
+            snapPoints={["7%", "100%"]}
             onChange={handleSheetChanges}
             backgroundStyle={{
                 backgroundColor: sheetIndex === 0 ? "#2B2B2B" : "black",
